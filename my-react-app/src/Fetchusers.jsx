@@ -1,38 +1,3 @@
-// import { useEffect } from "App.jsx";
-
-//   function first(){
-//         useEffect(async ()=>{
-//            let a= await fetch('https://jsonplaceholder.typicode.com/comments');
-//        })
-//        return(
-//           <p> {a.JSON.parse(JSON.stringify())}</p>
-//        )
-// }
-// export default first
-
-// import { useEffect, useState } from 'react';
-// import Listed from './listed'
-
-// function FetchUsers() {
-//   const [Id, setId] = useState([]);
-
-//   useEffect(() => {
-//     fetch('https://jsonplaceholder.typicode.com/comments')
-//       .then((res) => res.json())
-//       .then((data) => {
-//         const a = data.slice(0, 10).map(x => x.id);
-//         setId(a);
-//       })
-//       .catch((err) => console.error('Fetch error:', err));
-//   }, []);
-
-//   return <Listed Id={Id} />;
-// }
-
-// export default FetchUsers;
-
-
-
 import { useEffect, useState } from 'react';
 import Listed from './listed';
 
@@ -51,5 +16,4 @@ function FetchUsers() {
 
   return <Listed ids={ids} />;
 }
-
 export default FetchUsers;
