@@ -1,9 +1,9 @@
-function Listed({ users }) {
+function Listed({ ids }) {
   return (
     <div>
       <h2>First 10 Users:</h2>
       <ul>
-        {users.map((user) => (
+        {ids.map((user) => (
           <li key={user.id}>
             <strong>ID:</strong> {user.id} <br />
             <strong>Name:</strong> {user.name} <br />
@@ -15,6 +15,5 @@ function Listed({ users }) {
     </div>
   );
 }
+
 export default Listed;
-
-
